@@ -7,6 +7,7 @@
 
 obj-$(CONFIG_TOUCHSCREEN_FTS)                   += ft8756_spi/
 obj-$(CONFIG_TOUCHSCREEN_NT36xxx_HOSTDL_SPI)    += nt36xxx_spi/
+obj-$(CONFIG_TOUCHSCREEN_COMMON)	            += tp_common.o
 
 wm97xx-ts-y := wm97xx-core.o
 
