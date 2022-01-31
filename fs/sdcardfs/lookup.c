@@ -342,7 +342,7 @@ static struct dentry *__sdcardfs_lookup(struct dentry *dentry,
 				 * because the sdcard daemon also regards this case as
 				 * a lookup fail.
 				 */
-				pr_info("sdcardfs: base obbpath is not available\n");
+				pr_debug_ratelimited("sdcardfs: base obbpath is not available\n");
 				sdcardfs_put_reset_orig_path(dentry);
 				goto out;
 			}
